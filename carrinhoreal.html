@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #020202;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-price {
+            align-self: center;
+            margin-left: 20px;
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .checkout-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="dg logo.png" alt="Logo" style="max-width: 100px;">
+    <nav>
+        <ul>
+            <li><a href="lojadcarros.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+            <li><a href="cadastrastro2.html">Cadastro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="cart-container">
+    <h1>Carrinho de Compras</h1>
+
+    <div class="cart-item">
+        <div class="item-details">
+            <strong></strong><br>
+            <span>Aerofolio Bmw M4 Psm Style Para Bmw Serie 3 F30 F80</span>
+        </div>
+        <div class="item-price">R$ 900,00</div>
+    </div>
+
+    <div class="cart-item">
+        <div class="item-details">
+            <strong></strong><br>
+            <span>Aerofólio Lancer X</span>
+        </div>
+        <div class="item-price">R$ 1000,00</div>
+    </div>
+
+    <div class="total">
+        <span>Total:</span>
+        <span>R$ 1900,00</span>
+    </div>
+    <a href="comprasucedida.html">
+        <button class="checkout-button" >Finalizar Compra</button>
+    </a>
+</div>
+
+</body>
+</html>
